@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: rgb(15,118,110);
+    /* --primary-color: 4b4b4b; */
+    /* bg: #FFF3E0 */
+    --secondary-color: #000;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.bgPrimary{
+    background: #1a1a1afa;
+    backdrop-filter: blur(4px);
+}
+.textPrimary{
+    color: var(--primary-color)
+}
+.textHighLight{
+    font-size: 21px;
+    font-weight: bold;
+}
+.textHighLight.lg{
+    font-size: 27px
+}
+.portfolioBlock{
+    background: url(../src/assets/img/headerbg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.navHeader{
+    @apply text-white w-full ;
+    padding: 0px 15px;
+    background: #141516b8;
+    backdrop-filter: blur(5px);
+   
+}
+.navHeader .nav ul li a{
+    @apply px-3 text-white inline-block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.navHeader .mobileNav{
+ @apply fixed w-full;
+    height: auto;  
+    top: 56px;
+    left: 0;
+   
+}
+.navHeader .mobileNav li a{
+    @apply px-3 py-4 text-white block;
+    border-bottom: 1px solid #5c5c5c;
+}
+.introSection .description{
+  letter-spacing: 1px;
+}
+.introSection .iconBlock{
+    right: 100%;
+    bottom: 20%;
+}
+.aboutSection .aboutMePara{
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.toolSection .skillItems {
+    width: 120px;
+    height: 150px;
+    background: #fff;
+    color: var(--primary-color);
+    box-shadow: 0 0 6px 3px #5d5353;
+    border-radius: 5px;
+}
+.toolSection .skillProgress{
+    height: 10px;
+    background: #a69e9e;
+    border-radius: 15px;
+}
+.toolSection .progressBar{
+    border-radius: 15px;
+    background: var(--primary-color);
+    height: 100%;
+}
+.ProjectSection {
+
+}
+.ProjectSection .projectList {
+    min-width: 250px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px #6f6f6f;
+    background: linear-gradient(91deg, rgb(60 60 71) 16%, rgb(5 63 63) 98%);
+    transition: all .1s ease-out;
+}
+.ProjectSection .projectList:hover {
+    background: linear-gradient(91deg, rgb(60 60 71) 16%, rgb(6 124 124) 98%);
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px #7c7c7c;
+}
+.ProjectSection .projectImg{
+ height: 200px;
+ object-fit:cover;
+ border-radius: 5px;
+}
+.ProjectSection .skillUsed{
+ 
+}
+.ProjectSection .skillList{
+    background: #54545b;
+    border-radius: 8px;
+}
+.ProjectSection .backLinksBlock{
+    background: linear-gradient(91deg, rgb(60 60 71) 16%, rgb(6 124 124) 98%);
+}
