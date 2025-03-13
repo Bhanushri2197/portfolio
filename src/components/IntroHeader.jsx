@@ -3,7 +3,7 @@ import { FaGithub ,FaLinkedin } from "react-icons/fa";
 import {fadeIn} from "../assets/utility/variants"
 import {motion} from "framer-motion"
 function IntroHeader() {
-  return <section id="intro" className="introSection  px-10 md:pt-40  md:pb-30 py-20 bgPrimary text-white opacity-95">
+  return <section id="home" className="introSection  px-10 md:pt-40  md:pb-30 py-20 bgPrimary text-white opacity-95">
    <div className="container mx-auto flex md:flex-row flex-col justify-center items-center">
    <motion.div 
    variants = {fadeIn("up",0.2)}
