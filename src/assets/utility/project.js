@@ -14,7 +14,7 @@ export const ProjectData = [
     },
     {
         imgSrc: shoppingContext,
-        title: "Shopping Cart",
+        title: "Shopping Cart using Context",
         description: "Shopping Cart using Context project",
         liveLink: "https://shoppingcartb.netlify.app/",
         codeLink: "https://github.com/Bhanushri2197/cartContext",
@@ -22,7 +22,7 @@ export const ProjectData = [
     },
     {
         imgSrc: shoppingRedux,
-        title: "Shopping Cart",
+        title: "Shopping Cart using redux",
         description: "Shopping Cart using Redux project",
         liveLink: "https://redux-shoopingsite.netlify.app/",
         codeLink: "https://github.com/Bhanushri2197/redux-shoppingcart",
