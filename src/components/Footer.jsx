@@ -7,9 +7,9 @@ function Footer() {
     <section id='footer'>
       <footer className="bg-black text-white py-8">
         <div className="container mx-auto text-center">
-          <h2 className="text-xl my-3 font-bold">Bhanushri H</h2>
+          <h2 className="text-xl my-3 font-bold">Bhanushri P</h2>
 
-          <ul className="flex justify-center space-x-6 mt-4 text-gray-300">
+          <ul className="flex flex-wrap justify-center space-x-6 mt-4 text-gray-300">
             {["home", "about", "skill", "project", "qualification", "contact"].map((item) => (
               <li key={item}>
                 <a href={`#${item}`} className="hover:text-primary-400">{item}</a>
@@ -22,7 +22,7 @@ function Footer() {
             {[
               { icon: SiGmail, link: "mailto:steffynajones@gmail.com" },
               { icon: FaLinkedin, link: "https://www.linkedin.com/in/bhanushri-p-011371201/" },
-              { icon: FaWhatsapp, link: "https://wa.link/9087661001" }
+              { icon: FaWhatsapp, link: "https://wa.link/tsig0e" }
             ].map(({ icon: Icon, link }, index) => (
               <a key={index} href={link} target="_blank" rel="noopener noreferrer"
                 className="text-primary-400 hover:text-primary-500 border border-primary-400 rounded-full p-2">

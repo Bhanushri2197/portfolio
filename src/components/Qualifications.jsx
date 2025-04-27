@@ -23,7 +23,7 @@ function Qualifications() {
 
           <button
             onClick={() => setActiveTab("experience")}
-            className={`flex items-center hover:bg-primary space-x-2 text-lg font-semibold ${
+            className={`flex items-center hover:underline  space-x-2 text-lg font-semibold ${
               activeTab === "experience" ? "text-white" : "text-gray-400"
             }`}
           >

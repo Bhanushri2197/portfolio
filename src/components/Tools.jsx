@@ -87,12 +87,17 @@ function Tools() {
               <h3 className="text-2xl mt-20 font-heading text-center">{category.category}</h3>
                     <div className='flex mt-10 flex-wrap items-center justify-center'>
                      { category.skills.map((skill,ind) => (
-                        <div key={ind} className="skillItems m-3 p-2 flex flex-col items-center justify-center">
+                        <div key={ind}
+                        data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1500"
+                        data-aos-anchor-placement="top-center"
+                          className="skillItems m-3 p-2 flex flex-col items-center justify-center">
                         <div className="imgBlock mb-2">
-                          <skill.icon className="md:text-4xl text-primary" />
+                          <skill.icon className="md:text-4xl text-xl text-primary" />
                         </div>
-                        <h4 className='skillTitle font-bold text-xl text-center'>{skill.name}</h4>
-                        <div className="skillProgress mt-3 w-full">
+                        <h4 className='skillTitle font-bold text-l md:text-xl text-center'>{skill.name}</h4>
+                        <div className="skillProgress mt-3 ">
                           <div className="progressBar" style={{width: `${skill.score}%`}}></div>
                         </div>
                         </div>

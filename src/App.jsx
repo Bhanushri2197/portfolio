@@ -8,7 +8,9 @@ import Qualifications from './components/Qualifications'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { Toaster } from "react-hot-toast";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 function App() {
  return <div className='portfolioBlock'>
   <Header />

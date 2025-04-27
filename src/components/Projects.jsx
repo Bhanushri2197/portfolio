@@ -45,21 +45,14 @@ function Projects() {
             {
                 ProjectData.map((project, index) => (
                     <SwiperSlide key={index}>
-                            <div className="projectList group relative">
-                                <div>
-                                    <div className="">
+                            <div className="projectList  relative"
+                             data-aos="fade-left"
+                              data-aos-easing="ease-out-cubic"
+                              data-aos-duration="1000"
+                              data-aos-anchor-placement="center-bottom">
+                              <div className="projectListTop relative group">
                                         <img className="w-full h-full projectImg" src={project.imgSrc} alt={project.title} />
-                                    </div>
-                                    <div className='p-2'>
-                                        <h4 className='projectTitle text-2xl text-bold font-heading '>{project.title}</h4>
-                                        <div className="skillUsed mt-5 flex flex-wrap">
-                                        {project.skills.map((skill, index) => (  
-                                                <div key={index} className="skillList my-1 mr-1 inline p-2 text-sm rounded-lg">{skill}</div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="backLinksBlock absolute text-center inset-0 flex flex-col justify-center items-center  bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div className="backLinksBlock absolute h-full text-center inset-0 flex flex-col justify-center items-center  bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <h4 className="projectTitle text-2xl font-bold font-heading text-white">{project.title}</h4>
                                     <div className="flex space-x-4 mt-4">
                                         <a className="text-white bg-primary hover:bg-black border-2 border-primary rounded-lg p-3 transition-colors duration-300" href={project.liveLink}>
@@ -70,6 +63,15 @@ function Projects() {
                                         </a>
                                     </div>
                                 </div>
+                              </div>
+                                    <div className='p-2'>
+                                        <h4 className='projectTitle text-2xl text-bold font-heading '>{project.title}</h4>
+                                        <div className="skillUsed mt-5 flex flex-wrap">
+                                        {project.skills.map((skill, index) => (  
+                                                <div key={index} className="skillList my-1 mr-1 inline p-2 text-sm rounded-lg">{skill}</div>
+                                            ))}
+                                        </div>
+                                    </div>                           
                          
                             </div>
                     

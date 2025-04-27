@@ -47,7 +47,7 @@ function Contact() {
       <div className="container mx-auto">
         <div
           className="flex justify-center items-center h-screen bg-cover bg-center px-4"      >
-            <div className="flex justify-center items-center imgBlock w-1/2">
+            <div className="hidden md:flex justify-center items-center imgBlock w-1/2">
                     <img className="delay-[300ms] duration-[600ms] w-2/3 taos:translate-x-[100%] taos:opacity-0" data-taos-offset="400" src={contactImg} alt="" />
             </div>
           <div className="bg-white bg-opacity-10 backdrop-blur-lg p-8 sm:p-10 rounded-xl shadow-lg w-full max-w-lg text-white">
